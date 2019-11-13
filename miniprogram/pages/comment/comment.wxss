@@ -1,0 +1,46 @@
+.c-body{
+  background-color:rgb(146, 141, 141);
+  height: 400rpx;
+  display: flex;
+  padding: 10rpx;
+}
+.c-img{
+  width: 280rpx;
+  height: 90%;
+  margin: 10rpx;
+  /* border:1rpx red solid; */
+} 
+.c-info{
+  /* border:1rpx red solid; */
+  color:#fff;
+  line-height: 60rpx;
+  margin-left: 14rpx;
+  
+  flex: 1;
+}
+.c-title{
+  font-size: 38rpx;
+  /* color:#fff; */
+  font-weight: bolder; 
+}
+.c-original_title , .c-counter , .c-director {
+  font-size: 28rpx;
+  /* margin-top: 10rpx; */
+}
+.c-score{
+ color: #fc0;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.footer-desc{
+  font-size:26rpx;
+}
+
+.upload-img{
+  display: block;
+}
+.comment-img{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 10rpx;
+}

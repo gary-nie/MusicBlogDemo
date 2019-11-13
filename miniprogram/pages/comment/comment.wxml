@@ -1,0 +1,29 @@
+<view class="c-body" >
+<image class="c-img" src="{{detail.images.small}}"/>
+<view class="c-info">
+<view class="c-title">{{detail.title}}</view>
+<view class="c-original_title">{{detail.original_title}}</view>
+<view class="c-score">{{detail.rating.average}}分</view>
+<view class="c-counter" >
+<text wx:for="{{detail.countries}}" wx:key="{{index}}">{{item}} /</text>
+</view>
+<view class="c-director">{{detail.directors[0].name}}</view>
+</view>
+</view>
+<view class="footer-desc">
+{{detail.summary}}
+</view>
+
+<view class="footer-comment">
+
+  <van-field
+    value="{{value}}"
+    placeholder="输入一些评价吧"
+    bind:change="onChangeComment"
+  />
+  <van-rate value="{{ value }}" bind:change="onChangeScore" />
+  <van-button type="warning"  class="upload-img"  bindtap="uploadImg">上传图片</van-button>
+  <image src="{{item}}" class="comment-img" wx:for="{{images}}" wx:key="{{index}}"></image>
+  <van-button type="danger" color="red" type="large" bindtap="submit">提交评论</van-button>
+
+</view>
